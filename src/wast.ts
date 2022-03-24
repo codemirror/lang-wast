@@ -1,5 +1,5 @@
 import {delimitedIndent, indentNodeProp, foldNodeProp, foldInside, LRLanguage, LanguageSupport} from "@codemirror/language"
-import {styleTags, tags as t} from "@codemirror/highlight"
+import {styleTags, tags as t} from "@lezer/highlight"
 import {parser} from "./wast.grammar"
 
 export const wastLanguage = LRLanguage.define({
