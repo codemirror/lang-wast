@@ -27,9 +27,9 @@
   "sideEffects": false,
   "license": "MIT",
   "dependencies": {
-    "@lezer/highlight": "^0.15.0",
+    "@lezer/highlight": "^0.16.0",
     "@codemirror/language": "^0.19.0",
-    "@lezer/lr": "^0.15.0"
+    "@lezer/lr": "^0.16.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.5"
