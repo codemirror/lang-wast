@@ -3,6 +3,7 @@ import {styleTags, tags as t} from "@lezer/highlight"
 import {parser} from "./wast.grammar"
 
 export const wastLanguage = LRLanguage.define({
+  name: "wast",
   parser: parser.configure({
     props: [
       indentNodeProp.add({
