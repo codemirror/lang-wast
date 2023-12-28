@@ -37,13 +37,13 @@ Type {
     )
   }
 
-  String { '"' (!["\\] | "\\" _)* '"' }
+  String[isolate] { '"' (!["\\] | "\\" _)* '"' }
 
-  LineComment { ";;" ![\n]* }
+  LineComment[isolate] { ";;" ![\n]* }
 
   blockCommentRest { ![;] blockCommentRest | ";" blockCommentSemi }
   blockCommentSemi { ![);] blockCommentRest | ";" blockCommentSemi | ")" }
-  BlockComment { "(;" blockCommentRest }
+  BlockComment[isolate] { "(;" blockCommentRest }
 
   whitespace { $[ \n\r\t] }
 
