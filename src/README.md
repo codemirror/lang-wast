@@ -19,6 +19,19 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+## Usage
+
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {wast} from "@codemirror/lang-wast"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `(call $log (i32.const 0) (i32.const 13))`,
+  extensions: [basicSetup, wast()]
+})
+```
+
 ## API Reference
 
 @wast
